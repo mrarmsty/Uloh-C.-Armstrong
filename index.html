@@ -1,16 +1,348 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>ULOH C. ARMSTRONG</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="images/man-in-suit-and-tie.png">
+		<link rel="icon" href="images/Armstrong NCD 3-modified.png">
+
+<!-- Styling of the skills and tools section -->
+
+		<style>
+			body {
+			  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			  background: #f4f4f4;
+			  margin: 0;
+			  padding: 2rem;
+			}
+		
+			.skills-section {
+			  max-width: 1000px;
+			  margin: auto;
+			  background: #fff;
+			  padding: 3rem 2rem;
+			  border-radius: 1rem;
+			  /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+			}
+		
+			.skills-section h2 {
+			  text-align: center;
+			  font-size: 2rem;
+			  margin-bottom: 2rem;
+			  color: #222;
+			}
+		
+			.skills-grid {
+			  display: grid;
+			  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			  gap: 1.5rem;
+			}
+		
+			.skill-card {
+			  background: #f9f9f9;
+			  border: 1px solid #ddd;
+			  padding: 1.5rem 1rem;
+			  border-radius: 0.8rem;
+			  text-align: center;
+			  transition: 0.3s;
+			}
+		
+			.skill-card:hover {
+			  transform: scale(1.05);
+			  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+			  background: #fdfaf7;
+			  border-color: #833f03;
+			}
+		
+			.skill-card img {
+			  width: 40px;
+			  height: 40px;
+			  margin-bottom: 0.5rem;
+			}
+		
+			.skill-card h4 {
+			  margin: 0.5rem 0;
+			  font-size: 1rem;
+			  color: #333;
+			}
+		
+			.skill-category {
+			  text-align: left;
+			  margin: 2rem 0 1rem;
+			  font-size: 1.2rem;
+			  color: #555;
+			  font-weight: bold;
+			}
+		  </style>
+
+		  <!-- Styling the projects section -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      font-size: 2.0rem;
+      margin-bottom: 2.5rem;
+      color: #1a202c;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      object-fit:contain;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #2d3748;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: #4a5568;
+      margin-bottom: 1rem;
+    }
+
+    .tools-used {
+      font-size: 0.85rem;
+      color: #b59f8c;
+      font-style: italic;
+      margin-bottom: 0.8rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      text-decoration: none;
+      background: #845933;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .project-link:hover {
+      background: #e0cebe;
+    }
+
+    @media (max-width: 600px) {
+      .project-content {
+        padding: 1rem;
+      }
+    }
+  </style>
+		
+		<!-- Styling the Certifications section -->
+
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+		
+			body {
+			  font-family: Arial, sans-serif;
+			  background: #f9f9f9;
+			  padding: 2rem;
+			  margin: 0;
+			}
+		
+			.carousel-container {
+			  max-width: 700px;
+			  margin: auto;
+			  position: relative;
+			  overflow: hidden;
+			  border-radius: 1rem;
+			  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+			  background: #fff;
+			}
+		
+			.carousel-wrapper {
+			  display: flex;
+			  transition: transform 0.5s ease-in-out;
+			}
+		
+			.carousel-slide {
+			  min-width: 100%;
+			  padding: 2rem;
+			  text-align: center;
+			}
+		
+			.carousel-slide img {
+			  max-width: max-content;
+			  height: 280px;
+			  object-fit: contain;
+			  margin-bottom: 1rem;
+			}
+		
+			.carousel-slide h3 {
+			  font-size: 1.3rem;
+			  margin-bottom: 0.5rem;
+			}
+		
+			.carousel-slide p {
+			  margin: 0.3rem 0;
+			  color: #555;
+			}
+		
+			.nav-buttons {
+			  position: absolute;
+			  top: 50%;
+			  width: 100%;
+			  display: flex;
+			  justify-content: space-between;
+			  transform: translateY(-50%);
+			}
+		
+			.nav-buttons button {
+			  background: rgba(255, 255, 255, 0.1);
+			  border: none;
+			  padding: 0.6rem 1rem;
+			  cursor: pointer;
+			  font-size: 1.2rem;
+			  transition: background 0.3s;
+			  border-radius: 50%;
+			}
+		
+			.nav-buttons button:hover {
+			  background: #d6bfab;
+			}
+		
+			.dots {
+			  display: flex;
+			  justify-content: center;
+			  margin-top: 1rem;
+			}
+		
+			.dot {
+			  width: 10px;
+			  height: 10px;
+			  margin: 0 5px;
+			  background-color: #ccc;
+			  border-radius: 50%;
+			  cursor: pointer;
+			  transition: background-color 0.3s;
+			}
+		
+			.dot.active {
+			  background-color: #833f03;
+			}
+		  </style>
+
+		  <!-- Styling the Testimonial section -->
+
+		  <style>
+			body {
+			  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			  margin: 0;
+			  background: #f0f4f8;
+			  padding: 2rem;
+			}
+		
+			.testimonial-section {
+			  max-width: 800px;
+			  margin: auto;
+			  text-align: center;
+			}
+		
+			.testimonial-section h2 {
+			  font-size: 2rem;
+			  margin-bottom: 2rem;
+			  color: #2d3748;
+			}
+		
+			.testimonial-container {
+			  position: relative;
+			  overflow: hidden;
+			  height: 320px;
+			}
+		
+			.testimonial {
+			  position: absolute;
+			  top: 0;
+			  left: 100%;
+			  width: 100%;
+			  opacity: 0;
+			  transition: all 0.6s ease-in-out;
+			  padding: 1.5rem;
+			  background: #fff;
+			  border-radius: 1rem;
+			  box-shadow: 0 10px 5px rgba(0,0,0,0.2);
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			}
+		
+			.testimonial.active {
+			  left: 0;
+			  opacity: 1;
+			}
+		
+			.testimonial img {
+			  width: 80px;
+			  height: 80px;
+			  border-radius: 50%;
+			  object-fit: cover;
+			  margin-bottom: 1rem;
+			}
+		
+			.testimonial p {
+			  font-size: 1rem;
+			  color: #4a5568;
+			  margin-bottom: 1rem;
+			}
+		
+			.testimonial h4 {
+			  margin: 0;
+			  font-size: 1.1rem;
+			  color: #2c5282;
+			}
+		
+			@media (max-width: 600px) {
+			  .testimonial-section {
+				padding: 1rem;
+			  }
+			}
+		  </style>
+
+<!-- Link to the external CSS styling -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 
 
@@ -23,10 +355,11 @@
 		<nav id="nav">
 			<ul class="container">
 				<li><a href="#main">Home</a></li>
-				<li><a href="#one">About</a></li>
+				<!-- <li><a href="#one">About</a></li> -->
+				<li><a href="#one_B">Skills</a></li>
+				<li><a href="#five">Testimonials</a></li>
 				<li><a href="#two">Projects</a></li>
-				<!-- <li><a href="https://mrarmsty.github.io/Data-Analysis/#skills-s">Skills</a></li>
-				<li><a href="https://mrarmsty.github.io/Data-Analysis/#certifications">Certification</a></li> -->
+				<li><a href="#four">Certifications</a></li>
 				<li><a href="#three">Contact</a></li>
 			</ul>
 		</nav>
@@ -37,14 +370,13 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/Armstrong NCD 3-modified.png" alt="" /></a>
-					<h1><strong>I am Armstrong
-					</strong><br>
-					A data analyst 
+					<h1>
+						<!-- <strong>I'm Armstrong</strong><br> -->
+					A data analyst & data Analytics instructor 
 					<!-- <a href="http://html5up.net">HTML5 UP</a>. -->
 				</h1>
 				</div>
 			</header>
-
 
 
 
@@ -56,117 +388,254 @@
 						<header class="major">
 							<h2>Welcome to Armstrong's Data Analytics Hub!</h2>
 						</header>
-						<p>I'm Armstrong, a data analyst who excels at maximizing the power of data to inform wise choices. <br>
+						<p>My name is Uloh C. Armstrong. <br>
 
-							I turn raw data into useful insights because of my excellent knowledge of cutting-edge tools and technologies like <span class="second-strong">Python, SQL, Microsoft Excel, and Microsoft Power BI</span>. 
-							By putting my skills in data analytics and visualization to use, I enable organizations and individuasls to make better decisions and enhance their winning strategies.<br> <br>
-							
-							As a great user of databases and relational database management systems like MySQL, SSMS, and SQLite, I make sure that data is organized smoothly and effectively, releasing its actual worth. <span class="second-strong">I'm your go-to person </span>  for generating visually attractive dashboards, doing in-depth analyses, and designing strong data pipelines.</p>
+							I have 2+ years of experience turning raw data into actionable insights that drive business decisions. <br> 
+							I hold a Bachelor's degree in Statistics and am a Certified Data Analyst (NITDA, 3MTT, Nigeria). <br><br>
+							I’ve worked on projects across industries like finance, health, education, 
+							and operations — building dashboards, performance models, and interactive 
+							reports using tools like <span class="second-strong">Microsoft Power BI, Python, SQL, Microsoft Excel, Tableau and SPSS 
+								 </span>.
+
+						 I enjoy sharing knowledge through 
+							training and mentoring.
+							I design databases, and proficient in use of multiple Database management systems.<br> <br>
+
+							Whether you need deep insights, clear dashboards, design and/ mapping of your databases, or just want to make better 
+							data-driven decisions — I’m here to help turn your data into value.
+
 						<ul class="actions">
 							<li><a href="#two" class="button">View Projects</a></li>
 						</ul>
 					</section>
 
+
+<!-- one_B begins -->
+
+					<section id="one_B">
+						<div class="skills-section">
+							<h2>Data Analytics Skills & Tools</h2>
+						
+							<div class="skill-category">Languages & Tools</div>
+							<div class="skills-grid">
+							  <div class="skill-card">
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+								<h4>Python</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+								<h4>SQL</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" alt="Excel">
+								<h4>MS Excel</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://static-00.iconduck.com/assets.00/power-bi-icon-1536x2048-0xah5g2o.png" alt="Power BI">
+								<h4>MS Power BI</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://www.pngfind.com/pngs/m/339-3393438_spss-spss-logo-hd-png-download.png" alt="SPSS">
+								<h4>SPSS</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA4VBMVEX////odixbZZFZh5vHIDUfRH7rkSxwmabocyT3+frtmWvqjBvnbxnodSnGGzLrkCj0xq7pfz8YQHztm0P42cB1mqrQS1pKZJI6WIrMOUoANXbtn1H1yqXJJTojSYK9xdRQW4tqkqTh4+pSXo2dt8DF1NmLq7aan7l4gKTl7O7T3+Lyt5lqkqX65drun3fnbA2xxc7xtXvbfod9jq7FBCaxtcjhlp3zwZVmcJnkpaqRnriMkrCCprHf5+rqiAD76+L20bI3Rn/xtHnriVHeiJHsk2AAJ3DLP066wtJEUYXjnqXKkhzKAAAEQElEQVR4nO3dbVvaMBSHcQRFEdQN94CMTXCoA+fUKeoUdbpH/f4faM6SFhvOKUkPktT/720Ccl/ZZbqW1lwOwECpv/VfvzTtDzIxpfkACv2FQv+h0H8o9B8K/YdC/6HQfyj0Hwr9l7XCUlczKNQHutP+sMMayskVP7FbmB9Xq8+/1eZ+SC6EtFoeuHzFT+wml4USClsF5bNcCGl1pRgoP13h62dU2JILIWENQ91CKyYMig8k/aZxdA1LnbiLQeCFNtLh38rRQp31jo9CWShkoJDk6G6hwxqSsIayUMhAIQmFslDIwG5BwhrKwhoynkFhcKamleHCdiC7hdZQKCsbhY3Vd6SissJMWv1u/DM3W69JhQg9qWVyXeqkvEIqRom0csO4cL+QVtuosJgOClGIQhSiMHdyWSZF2wU9p3zpeuGrBi06pjlgZu06XsjJxlEbB4WTgEJZKJwEFMqabqHjZ4StebKGO18iO2Yv9WQNFysLSmXR7KWerOHiwoyygMIYFMpCIQmFDF92C6whDWsoC4UkFDJQWFLM3pbgYGHpuhm43hjr7fYfHsi1Rd3W6eBuUWrmA83xCtvB13o2iWEX19CqcN7NQsE1pAvVtxiS7pKN86bw4OYgcGN4fSlFYXtLGXl9SbjQWorCBCiMQ6EtFNpDYRwKbaHQHgrjUGgrA4W7L1g/lsLCpR/8VMNj+icr3NmrcKLA+0R25p7hJeKnK6zMyKiwhRu6sHBdH8ttaQa3X/W1gX7CM1aeqDDf1OQVfaiZmx9fy43C07wRFKIQhU4XDj2h6/736hh3RjpaeKEZbBf7nU7H7FqHo7uFLsWOv8R5FMHOlN3xJQtnXnIeFfIzXT1qS5CB/1skQKE9FMah0BYK7aEwDoW2UGgPhXEJhT+/KsdmnyNF4dmhcjZqWLhw7Uj5Y/YxUxS+rVcD9dqoYenC5dnA8huzj5mmsDoXqKJwrLdrP5ydKWS4cPAsdeoMTQYKE7hYeDs463Sb1UJhKCShkIFCWSgkoZCBQlkoJKGQgUJZ1oW/9iK/zF7qSeHVbiThTyfGeVKYAgploXASUCgLhZOAQnPHy+9JsxF60tE345/Zq34gzUXoSdWR16WowqNl0lAhPcmmsD6XTt2scDYdFKIQhShE4VR2i+3fddJwB+m3SeHd2h/SUCE9ac28cOPvOqkWBtboSX9FLo/msnLUxkEho6eY/nvyprD5MXC7bvhCbwo/hre2GL4QhbJQyEAhCYWyUMhAIQmFslDIQCEJhbJQyEAhCYWyUKj0tjV55VAbOmcfouJm4bk67xQJC/Pa0C37dB9HC4eCkjVRiEJB78e8S1aysBZeYPog2jLa3bHCX1+SLOydKduiLemYFfK/S920/UkT9pxqQ6cyf0Bl2qyPabyBQv+h0H8o9B8K/YdC/6HQfyj0Hwr9h0L/WX+/1BvhdRip75zD8/APTp7A/dz5rAAAAAAASUVORK5CYII=" alt="Tableau">
+								<h4>Tableau</h4>
+							  </div>
+							</div>
+						
+							<div class="skill-category">Capabilities</div>
+							<div class="skills-grid">
+							  <div class="skill-card">
+								<img src="https://img.icons8.com/fluency/48/data-configuration.png" alt="Data Cleaning">
+								<h4>Data Cleaning</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://vectorified.com/images/data-visualization-icon-17.png" alt="Visualization">
+								<h4>Data Visualization</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="http://icon-library.com/images/dashboards-icon/dashboards-icon-10.jpg" alt="Reporting">
+								<h4>Dashboard & Reporting</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Analytics">
+								<h4>Exploratory & Predictive Analysis</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-training-resume-flaticons-lineal-color-flat-icons.png" alt="Training">
+								<h4>Data analysis Training Delivery</h4>
+							  </div>
+							  <div class="skill-card">
+								<img src="https://miro.medium.com/v2/resize:fit:1200/1*YRY7KTj1QQB9Hwb_kArGcA.png" alt="Database Design">
+								<h4>Database Design</h4>
+							  </div>
+							</div>
+						  </div>
+
+
+						</section>
+
+						<!-- Testimonial section -->
+
+						<section class="testimonial-section" id="five">
+							<h2>What My Clients Say</h2>
+							<div class="testimonial-container">
+							  <div class="testimonial active">
+								<img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client 1" />
+								<p>" The analysis was thorough, and the findings were presented clearly. The results helped 
+me understand my data better and strengthened my research work."</p>
+								<h4>Mark – Federal University of Technology, Owerri</h4>
+							  </div>
+						
+							  <div class="testimonial">
+								<img src="https://media.istockphoto.com/id/2184496962/photo/happy-young-african-american-business-woman-in-suit-headshot-portrait.webp?a=1&b=1&s=612x612&w=0&k=20&c=47SX-lwYHbXCto8Ytcyw3qHRG7kdsKrWnhUv_7YMhrI=" alt="Client 2" />
+								<p>"The analysis was exceptional. I wish I could drop a 100 star review "</p>
+								<h4>Onyegbosi – Federal University of Technology, Owerri</h4>
+							  </div>
+
+							  <div class="testimonial">
+								<img src="https://media.istockphoto.com/id/1347495872/photo/african-american-businessman-wearing-glasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=FbPxODZISXEfLBcyi-Z48B6IBs3wKiQBZMsqcNO8xmU=" alt="Client 4" />
+								<p>"Armstrong provided excellent training and guidance on data analytics when called up on. I'll recommend his services all day long!"</p>
+								<h4> Chinemerem, Data analyst – Anambra</h4>
+							  </div>
+						
+							  <div class="testimonial">
+								<img src="https://media.istockphoto.com/id/1450790017/photo/smiling-african-woman-photographed-in-a-photo-studio.webp?a=1&b=1&s=612x612&w=0&k=20&c=TUUBVQQiUKWbwuFUDjGh51GLg5vgZLJtBFBfNi72_DE=" alt="Client 3" />
+								<p>"This is the best data analysis service I’ve ever used. He went above and beyond to 
+ensure my research objectives were fully addressed."</p>
+								<h4>Benedicta – Federal University of Technology, Owerri</h4>
+							  </div>
+
+						<div class="testimonial">
+								<img src="https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.webp?a=1&b=1&s=612x612&w=0&k=20&c=OnzQRmrTWj779-DI4_aEykdTKuwL-Ubphs1cdQ3tyxE=" alt="Client 2" />
+								<p>"Everything was perfect, from the clarity of the analysis to the timely delivery. I felt 
+supported at every step, and the results exceeded my expectations. "</p>
+								<h4>Alagba – Federal University of Technology, Owerri</h4>
+							  </div>
+
+							  <div class="testimonial">
+								<img src="https://media.istockphoto.com/id/1770470255/photo/black-woman-in-business-portrait-and-leadership-success-with-career-mindset-job-pride-in-new.webp?a=1&b=1&s=612x612&w=0&k=20&c=81ACJw1aLdAj3_zG-1kkzdyZOuOd1r4LyEosQvZB3hY=" alt="Client 2" />
+								<p>"Exceptional service! The analysis was not only accurate but also insightful. The detailed 
+explanation of the results greatly enhanced my understanding of my topic."</p>
+								<h4>Stella – Federal University of Technology, Owerri</h4>
+							  </div>
+							  
+							</div>
+						  </section>
+
 				<!-- Two -->
-					<section id="two">
-						<h2>Projects</h2>
-						<div class="row">
-
-
-							<div class="col-6 col-12-xsmall work-item">
-								<h3>Data analysis on revenue flow using python</h3>
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/cash_flow.png" alt="" /></a>
-								<p>For this analysis, secondary data was used, data cleaning was carried out, and data transformation, afterwhich analysis and visualization was done.</p>
-								<a href="https://github.com/mrarmsty/Jupyter-projects/blob/main/CashFlow%20Report.ipynb" class="button mine">Details</a>
-								
-								
-							</div>
-
-
-
-							<div class="col-6 col-12-xsmall work-item">
-								<h3>Analysis on sea-level change using python.</h3>
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/Sea level change.jpg" alt="" /></a>
-								<p>This analysis was performed using python, in this case, 
-									regression analysis was employed to make forecast on rise in sea-level by year 2050.</p>
-								<a href="https://jovian.ai/mrarmsty/sea-level-predictor" class="button mine">Details</a>
-								
-								
-							</div>
-							<div class="col-6 col-12-xsmall work-item">
-								<h3>Data cleaning using SQL</h3>
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/Data cleaning using SQL.png" alt="" /></a>
-								<p>This action was performed on both SSMS and SQLite database managment systems.</p>
-								<a href="https://github.com/mrarmsty/SQL_Project/blob/main/index" class="button mine">Details</a>
-								
-								
-							</div>
-
-							
-							<div class="col-6 col-12-xsmall work-item">
-								<h3>Exploratory data analysis using power BI.</h3>
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/bebetter_sales.png" alt="" /></a>
-								<p>This analysis focused on a super store sales in the USA, The data was first transformed, and EDA was carried out.</p>
-								<a href="https://github.com/mrarmsty/Power-BI-project-files/blob/main/Superstore%20sales%20report.pdf" class="button mine">Details</a>
-								
-								
-							</div>
-
-							
-
-
-
-
-<!-- 
-							<div class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</div>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article> -->
-						</div>
-						<ul class="actions">
-							<li><a href="https://jovian.com/mrarmsty/notebooks" >See more projects...</a></li>
+						<section class="projects-section" id="two">
+							<h2>My Data Analytics Projects</h2>
+						
+							<div class="projects-grid">
+							  <div class="project-card">
+								<img src="images/Report-images-2.jpg" alt="Excel Dashboard" class="project-img" />
+								<div class="project-content">
+								  <div class="project-title">Nigerian road traffic crashes Analysis</div>
+								  <div class="project-desc">An exploratory analysis on Nigerian road traffic crashes, and factors influencing crashes in Nigeria.</div>
+								  <div class="tools-used">Tools: Excel, DAX</div>
+								  <a href="https://medium.com/@uloharmstrong/traffic-crashes-in-nigeria-2020-2024-e011a8e10675" class="project-link" target="_blank">View Details</a>
+								</div>
+							  </div>
+						
+							  <div class="project-card">
+								<img src="images/BI report img1.jpg" alt="Power BI Analysis" class="project-img" />
+								<div class="project-content">
+								  <div class="project-title">Employee efficiency Analysis</div>
+								  <div class="project-desc">Performed data modelling, EDA and data visualization using Power BI to show employee efficiency, aiding retrenchment and Promotion.</div>
+								  <div class="tools-used">Tools: DAX, Excel, Power BI</div>
+								  <a href="https://github.com/mrarmsty/Power-BI-project-files/blob/main/BI%20file.pdf" class="project-link" target="_blank">View Details</a>
+								</div>
+							  </div>
+						
+							  <div class="project-card">
+								<img src="images/Predictive Analytics Report-images-3.jpg" alt="SQL Report" class="project-img" />
+								<div class="project-content">
+								  <div class="project-title">Predictive analysis on book sales</div>
+								  <div class="project-desc">Performed predictive analysis on books sales using Power BI, and built a dashboard displaying findings.</div>
+								  <div class="tools-used">Tools: DAX, Power BI</div>
+								  <a href="https://medium.com/@uloharmstrong/predictive-analytics-on-book-sales-fd9eaeceda44" class="project-link" target="_blank">View Details</a>
+								</div>
+							  </div>
+						
+							  <div class="project-card">
+								<img src="images/Python project.jpg" alt="House Analysis" class="project-img" />
+								<div class="project-content">
+								  <div class="project-title">Housing price trends</div>
+								  <div class="project-desc">Analyzed housing data to provide insights into housing price trends and factors influencing such using Python and Excel.</div>
+								  <div class="tools-used">Tools: Python, Excel</div>
+								  <a href="https://github.com/mrarmsty/Jupyter-projects/blob/main/Course%20Project.ipynb" class="project-link" target="_blank">View Details</a>
+								</div>
+							  </div>
+							</div> <br>
+							<li><a href="https://github.com/mrarmsty?tab=repositories" >Click to see more on my Github</a>  <a href="https://github.com/mrarmsty" class="icon brands fa-github"><span class="label">Github</span></a>
+								</li>
 						</ul>
 					
 					</section>
 
+					<section id="four">
+
+					<h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Certifications</h2>
+
+					<div class="carousel-container">
+					  <div class="carousel-wrapper" id="carouselWrapper">
+						<!-- Slide 1 -->
+						<div class="carousel-slide">
+						  <img src="images/Jovian certificate.jpg" alt="Jovian Certified" />
+						  <h3>Data analysis with python: Zero to Pandas</h3>
+						  <p>Jovian / 2022</p>
+						  <p>Python; Pandas, Seaboarn, Matplotlib</p>
+						</div>
+				  
+						<!-- Slide 2 -->
+						<div class="carousel-slide">
+						  <img src="images/Armstrong-Uloh-Data Analysis & Visualization_page-0001 (1).jpg" alt="3MTT Certification" />
+						  <h3>Data Analysis and Visualization</h3>
+						  <p>3MTT, NITDA, FMCIDE / 2024</p>
+						  <p>Data analysis, visualization, and SQL</p>
+						</div>
+				  
+						<!-- Slide 3 -->
+						<div class="carousel-slide">
+						  <img src="images/FCC Certificate01.jpg" alt="FreeCodeCamp Certification" />
+						  <h3>Data analysis with Python</h3>
+						  <p>FreeCodeCamp / 2022</p>
+						  <p>Python for data analysis and visualization</p>
+						</div>
+
+					  	<!-- Slide 4 -->
+						<div class="carousel-slide">
+						  <img src="images/English_for_IT_1_Badge.jpg" alt="Cisco Certification" />
+						  <h3>English language for IT 1</h3>
+						  <p>Cisco / 2024</p>
+						  <p>English language for information technology</p>
+						</div>
+					  </div>
+				  
+					  <div class="nav-buttons">
+						<button onclick="moveSlide(-1)">&#8592;</button>
+						<button onclick="moveSlide(1)">&#8594;</button>
+					  </div>
+					</div>
+				  
+					<div class="dots" id="dotsContainer"></div>
+
+				</section>
+
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>I run a data analytics academy known as "BeBetter Analytics". So, you can reach out to me for consultations, private lectures on data analytics, and other freelance gigs. My mean response time is 24hours. <br> Do it today!</p>
+						<p> I’d love to hear from you! Whether it’s a project, question or opportunity — let’s talk. <br>My mean response time is 24hours.  </p>
 						<div class="row">
 							<div class="col-8 col-12-small">
 
 								<form action="mailto:uloharmstrong@gmail.com" method="post" >
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Type your name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Type your Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Type your Message" rows="4"></textarea></div>
 									</div> <br>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" /></li>
@@ -193,347 +662,80 @@
 								</ul>
 							</div>
 						</div>
-						<!-- <ul class="actions">
-							<span class="second-strong"><li>P.S: <a href="https://mrarmsty.github.io/Data-Analysis/#certifications" >Click to see certificates</a></li> </span>
-						</ul> -->
+						
 					</section>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				 -->
-
-			</div>
-
-		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
 						<li><a href="https://twitter.com/UCCArmstrong?s=09" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://github.com/mrarmsty" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://github.com/mrarmsty" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.facebook.com/cuc.armstrong.9" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://medium.com/@uloharmstrong" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
 						<li><a href="mailto:uloharmstrong@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; BeBetter Analytics</li><li>Design: <a href="mailto:spadecall9@gmail.com">Spade call</a></li>
+						<li>&copy; BeBetter Analytics</li><li>Web designer/developer: <a href="mailto:spadecall9@gmail.com">Spade call</a></li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
+
+		<!-- JS script for the certification carousel-->
+		<script>
+			const wrapper = document.getElementById("carouselWrapper");
+			const slides = document.querySelectorAll(".carousel-slide");
+			const dotsContainer = document.getElementById("dotsContainer");
+			let currentIndex = 0;
+		
+			// Create dots
+			slides.forEach((_, index) => {
+			  const dot = document.createElement("div");
+			  dot.classList.add("dot");
+			  if (index === 0) dot.classList.add("active");
+			  dot.addEventListener("click", () => goToSlide(index));
+			  dotsContainer.appendChild(dot);
+			});
+		
+			function updateCarousel() {
+			  wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+			  document.querySelectorAll(".dot").forEach((dot, i) => {
+				dot.classList.toggle("active", i === currentIndex);
+			  });
+			}
+		
+			function moveSlide(direction) {
+			  currentIndex = (currentIndex + direction + slides.length) % slides.length;
+			  updateCarousel();
+			}
+		
+			function goToSlide(index) {
+			  currentIndex = index;
+			  updateCarousel();
+			}
+		
+			// Optional autoplay
+			setInterval(() => moveSlide(1), 7000);
+		  </script>
+
+		  <!-- JS script for Testimonial carousel -->
+		  <script>
+			const testimonials = document.querySelectorAll('.testimonial');
+			let current = 0;
+		
+			function showNextTestimonial() {
+			  testimonials[current].classList.remove('active');
+			  current = (current + 1) % testimonials.length;
+			  testimonials[current].classList.add('active');
+			}
+		
+			setInterval(showNextTestimonial, 7000);
+		  </script>
+		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
