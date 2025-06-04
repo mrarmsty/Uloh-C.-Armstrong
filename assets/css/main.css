@@ -91,7 +91,7 @@ body {
 				content: '';
 				display: block;
 				position: absolute;
-				bottom: -0.6em;v
+				bottom: -0.6em;
 				left: 50%;
 				margin-left: -0.75em;
 				border-left: solid 0.75em transparent;
@@ -377,6 +377,9 @@ input, select, textarea {
 
 			.container {
 				max-width: calc(100% - 3em);
+			}
+			#nav .container{
+				font-size: 5px;
 			}
 
 		}
@@ -3315,6 +3318,19 @@ input, select, textarea {
 a.mine{
 	margin-top: 10px;
 		margin-bottom: 10px;
+}
+
+@media(max-width: 600px) {
+nav ul li{
+width: 70px;
+font-size: 11px;
+}
+.carousel-slide img {
+			  max-width: max-content;
+			  height: 220px;
+			  object-fit: contain;
+			  margin-bottom: 1rem;
+			}
 }
 /* .work-item img{
 	width: 13rem;
